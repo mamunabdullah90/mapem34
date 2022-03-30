@@ -11,12 +11,20 @@
 
 <body>
   <div class="slideshow-container">
-    <h4>Historical sites and natural beauties of <span>BD</span> </h4>
-    <h6>By- <br>Abdullah Al Mamun</h6>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-      Click</button>
+    <div class="top">
+      <h3>"Allah is <span class="auto-text"></span></h3>
 
-    <p id="demo"></p>
+    </div>
+    <div class="below">
+      <h4>Historical sites and natural beauties of <span>BD</span> </h4>
+    </div>
+
+    <div class="copyright">
+      <p id="demo">Copyright &copy; <script>
+          document.write(new Date());
+        </script> , <span>MAPEM</span> Learning Center, Abdullah Al Mamun </p>
+    </div>
+
     <div class="slideshow-elements">
       <div class="slideshow-element current">
         <img src="images/img1.png" alt="">
@@ -105,9 +113,7 @@
       </div>
     </div>
   </div>
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="script.js"></script>
 </body>
 

@@ -8,25 +8,76 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: green;
 }
 
-.slideshow-container h4 {
-    top: 0;
+.slideshow-container .top {
     position: absolute;
-    color: yellow;
-    flex-wrap: wrap;
-    margin: 10px;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #171010;
     text-align: center;
+    color: gold;
+}
+
+.slideshow-container .top h3 {
+    font-weight: 600;
+    padding: 5px 0px;
+    letter-spacing: 1px;
+}
+
+.slideshow-container .copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(6, 110, 6);
+    text-align: center;
+    color: yellow;
+    font-size: smaller;
+    text-align: center;
+}
+
+.slideshow-container #demo {
+    padding: 7px 5px;
+}
+
+.slideshow-container #demo span {
+
+    font-weight: bold;
+    color: red;
+    letter-spacing: 1px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    50% {
+        color: beige;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+
+.slideshow-container .below {
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    color: yellow;
+}
+
+.slideshow-container .below h4 {
+    padding: 0px 5px;
 
 }
 
-.slideshow-container h4 span {
+.slideshow-container .below h4 span {
     color: red;
     animation: anim 3s linear infinite;
 }
-
 
 @keyframes anim {
     50% {
@@ -38,36 +89,6 @@ body {
     }
 }
 
-.slideshow-container h6 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    color: #00000090;
-    letter-spacing: 1px;
-}
-
-.slideshow-container button {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: 10px;
-    background-color: yellow;
-    color: #000;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.slideshow-container #demo {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 60px;
-    margin-left: 10px;
-    font-size: smaller;
-    color: #fff;
-}
 
 .slideshow-element {
     text-align: center;
@@ -81,8 +102,9 @@ body {
 
 .slideshow-element img {
     width: 700px;
-    height: 400px;
+    height: 350px;
     border-radius: 10px;
+    margin-top: 60px;
 }
 
 .slideshow-element p {
@@ -94,22 +116,23 @@ body {
 
     .slideshow-element img {
         width: 500px;
-        height: 300px;
+        height: 320px;
+        margin-top: 40px;
     }
 }
 
 @media screen and (max-width: 600px) {
-
     .slideshow-element img {
         width: 300px;
-        height: 200px;
+        height: 230px;
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 350px) {
-
     .slideshow-element img {
         width: 250px;
-        height: 180px;
+        height: 190px;
+        margin-top: 10px;
     }
 }
